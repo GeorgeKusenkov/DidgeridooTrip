@@ -1,3 +1,61 @@
 <resources>
     <string name="app_name">Didgeridoo Trip</string>
+
+    <!--Модули-->
+    <string name="module1">Модуль 1</string>
+    <string name="module2">Модуль 2</string>
+    <string name="module3">Модуль 3</string>
+    <string name="module4">Модуль 4</string>
+    <string name="module5">Модуль 5</string>
+
+    <!--Уроки-->
+    <string name="lesson1">Урок 1</string>
+    <string name="lesson2">Урок 2</string>
+    <string name="lesson3">Урок 3</string>
+    <string name="lesson4">Урок 4</string>
+    <string name="lesson5">Урок 5</string>
+    <string name="lesson6">Урок 6</string>
+    <string name="lesson7">Урок 7</string>
+    <string name="lesson8">Урок 8</string>
+    <string name="lesson9">Урок 9</string>
+    <string name="lesson10">Урок 10</string>
+    <string name="lesson11">Урок 11</string>
+    <string name="lesson12">Урок 12</string>
+    <string name="lesson13">Урок 13</string>
+    <string name="lesson14">Урок 14</string>
+    <string name="lesson15">Урок 15</string>
+    <string name="lesson16">Урок 16</string>
+    <string name="lesson17">Урок 17</string>
+    <string name="lesson18">Урок 18</string>
+    <string name="lesson19">Урок 19</string>
+    <string name="lesson20">Урок 20</string>
+
+    <!--Курс 1. Описание модулей-->
+    <string name="course1_module1_description">Окунитесь с головой в основы звукоизвлечения</string>
+    <string name="course1_module2_description">Океан похитил все ритмы. Помогите Луке найти их все</string>
+    <string name="course1_module3_description">Лука отправляется в долину кругового дыхания. Духи поведают о древней технике</string>
+    <string name="course1_module4_description">Знакомство со звуками животных и разных техник игры</string>
+    <string name="course1_module5_description">Продвинутые техники игры</string>
+
+    <!--Курс№1, модуль №1 - заголовки уроков-->
+    <string name="course1_module1_lesson1_title">Вступление</string>
+    <string name="course1_module1_lesson2_title">Диджериду</string>
+    <string name="course1_module1_lesson3_title">Подготовительные упражнения</string>
+    <string name="course1_module1_lesson4_title">Дрон - базовый звук</string>
+    <string name="course1_module1_lesson5_title">Дрон. Найди свой звук!</string>
+    <string name="course1_module1_lesson6_title">Дрон. Вопросы и ответы</string>
+    <string name="course1_module1_lesson7_title">Дрон. 2 техники игры</string>
+    <string name="course1_module1_lesson8_title">Дрон. Вызов</string>
+    <string name="course1_module1_lesson9_title">Обертоны и гармоники</string>
+    <string name="course1_module1_lesson10_title">Невидимые обертоны</string>
+    <string name="course1_module1_lesson11_title">Обертоны. Практика</string>
+    <string name="course1_module1_lesson12_title">РИТМ 1</string>
+    <string name="course1_module1_lesson13_title">РИТМ 2</string>
+    <string name="course1_module1_lesson14_title">Уход за диджериду</string>
+    <string name="course1_module1_lesson15_title">Как выбрать диджериду?</string>
+    <string name="course1_module1_lesson16_title">Диджериду-музыка, которую вы просто обязаны послушать ч.1</string>
+    <string name="course1_module1_lesson17_title">Ещё немного об изготовлении диджериду</string>
+    <string name="course1_module1_lesson18_title">Ночная композиция</string>
+    <string name="course1_module1_lesson19_title">Истина где-то рядом</string>
+
 </resources>
