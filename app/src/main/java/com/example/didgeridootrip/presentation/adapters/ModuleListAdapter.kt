@@ -1,16 +1,19 @@
 package com.example.didgeridootrip.presentation.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.didgeridootrip.R
 import com.example.didgeridootrip.domain.entities.ModuleItem
 
 class ModuleListAdapter: RecyclerView.Adapter<ModuleListAdapter.ModuleItemViewHolder>() {
 
+    var onModuleItemClickListener: ((ModuleItem) -> Unit)? = null
     var moduleList = listOf<ModuleItem>()
 
     class ModuleItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
@@ -34,6 +37,9 @@ class ModuleListAdapter: RecyclerView.Adapter<ModuleListAdapter.ModuleItemViewHo
         holder.tvTitle.setText(moduleItem.title)
         holder.tvDescription.setText(moduleItem.description)
 
+        holder.itemView.setOnClickListener{
+            onModuleItemClickListener?.invoke(moduleItem)
+        }
     }
 
     override fun getItemCount(): Int {

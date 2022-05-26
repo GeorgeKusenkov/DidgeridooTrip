@@ -3,7 +3,6 @@
     <style name="CategoryLabel">
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:background">@drawable/category_label</item>
-
         <item name="android:paddingStart">15dp</item>
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingEnd">15dp</item>

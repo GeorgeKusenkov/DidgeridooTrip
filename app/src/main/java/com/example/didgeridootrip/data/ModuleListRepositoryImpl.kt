@@ -25,5 +25,4 @@ object ModuleListRepositoryImpl: ModuleListRepository {
     private fun updateList() {
         moduleListLiveData.value = moduleList.toList()
     }
-
 }

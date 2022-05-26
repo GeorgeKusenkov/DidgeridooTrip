@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/moduleListItemFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.ModuleListItemFragment"
+        android:label="fragment_module_list_item"
+        tools:layout="@layout/fragment_module_list_item" >
+        <action
+            android:id="@+id/action_moduleListItemFragment_to_moduleOneLessonsFragment"
+            app:destination="@id/moduleOneLessonsFragment" />
+        <action
+            android:id="@+id/action_moduleListItemFragment_to_moduleTwoLessonFragment"
+            app:destination="@id/moduleTwoLessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_moduleListItemFragment"
+            app:destination="@id/moduleListItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moduleOneLessonsFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.moduleOne.ModuleOneLessonsFragment"
+        android:label="fragment_lessons_one_module"
+        tools:layout="@layout/fragment_lessons_one_module" >
+        <action
+            android:id="@+id/action_moduleOneLessonsFragment_to_lessonOneFragment"
+            app:destination="@id/lessonOneFragment" />
+        <action
+            android:id="@+id/action_moduleOneLessonsFragment_to_lessonTwoFragment"
+            app:destination="@id/lessonTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonOneFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.moduleOne.lessons.LessonOneFragment"
+        android:label="fragment_course_one_module_one_lesson_one"
+        tools:layout="@layout/fragment_course_one_module_one_lesson_one" />
+    <fragment
+        android:id="@+id/lessonTwoFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.moduleOne.lessons.LessonTwoFragment"
+        android:label="fragment_course_one_module_one_lesson_two"
+        tools:layout="@layout/fragment_course_one_module_one_lesson_two" />
+    <fragment
+        android:id="@+id/courseOneModuleTwoLessonOneFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.moduleTwo.lessons.CourseOneModuleTwoLessonOneFragment"
+        android:label="fragment_course_one_module_two_lesson_one"
+        tools:layout="@layout/fragment_course_one_module_two_lesson_one" />
+    <fragment
+        android:id="@+id/courseOneModuleTwoLessonTwoFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.moduleTwo.lessons.CourseOneModuleTwoLessonTwoFragment"
+        android:label="fragment_course_one_module_two_lesson_two"
+        tools:layout="@layout/fragment_course_one_module_two_lesson_two" />
+    <fragment
+        android:id="@+id/moduleTwoLessonFragment"
+        android:name="com.example.didgeridootrip.presentation.fragments.courseOne.moduleTwo.ModuleTwoLessonFragment"
+        android:label="fragment_module_two_lesson"
+        tools:layout="@layout/fragment_module_two_lesson" >
+        <action
+            android:id="@+id/action_moduleTwoLessonFragment_to_courseOneModuleTwoLessonOneFragment"
+            app:destination="@id/courseOneModuleTwoLessonOneFragment" />
+        <action
+            android:id="@+id/action_moduleTwoLessonFragment_to_courseOneModuleTwoLessonTwoFragment"
+            app:destination="@id/courseOneModuleTwoLessonTwoFragment" />
+    </fragment>
+</navigation>
